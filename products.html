@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <!--tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- menu -->
+  <div class="bg-green-100  p-3 flex items-center justify-between shadow-xl sticky top-0 z-20"> 
+    <h1 class="text-2xl">Greenden</h1>
+
+    <svg id="menubtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="size-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class=" gap-5 hidden md:flex">
+      <li>
+        <a href="./index.html" class="text-gray-500 hover:underline hover:text-black">Home</a>
+      </li>
+      <li>
+        <a href="./products.html" class="text-gray-500 hover:underline hover:text-black">Products</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="text-gray-500 hover:underline hover:text-black">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- navbar -->
+  <div class="bg-green-100 fixed z-10 shadow-xl transition-all duration-1000 " id="navbar" style="width: 250px; height: 100%; right: -70%;">
+    <div id="backbtn" class="cursor-pointer">
+      <p class="font-semibold px-52 py-2 m-2"> X </p>
+    </div>
+    <ul class=" gap-32 my-5 text-center text-xl md:flex ">
+      <li class="py-1">
+        <a href="./index.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Home</a>
+      </li>
+      <li class="py-1">
+        <a href="./products.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Products</a>
+      </li>
+      <li class="py-1">
+        <a href="./contact.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- our products -->
+  <section class="text-center">
+  <h1 class="font-bold text-2xl mt-7">Our Products</h1>
+  <input id="search" type="text" class="border border-black m-3 p-2" placeholder="Search the products" style="width: 80%;">
+  <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 items-center mt-1 gap-5">
+    <div class="rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded  hover:shadow-2xl transform hover:-translate-y-1 " src="./images/cc1.png"
+        alt="">
+      <h3>Rhododendron</h3>
+      <p>$25</p>
+    </div>
+    <div class="  rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/gc2.png"
+        alt="">
+      <h3>Dahlia</h3>
+      <p>$71</p>
+    </div>
+    <div class=" rounded w-50 text-center  m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/cc4.png"
+        alt="">
+      <h3>Carnation</h3>
+      <p>$30</p>
+    </div>
+    <div class=" rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1 " src="./images/gc3.png" alt="">
+      <h3>Flower Pot for Balcony</h3>
+      <p>$50</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-4 items-center mt-1 gap-5">
+    <div class="rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded  hover:shadow-2xl transform hover:-translate-y-1 " src="./images/gc1.png"
+        alt="">
+      <h3>Self water plant</h3>
+      <p>$25</p>
+    </div>
+    <div class="  rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/cc3.png"
+        alt="">
+      <h3>Artificial Flower Pot</h3>
+      <p>$71</p>
+    </div>
+    <div class=" rounded w-50 text-center  m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/cc2.png"
+        alt="">
+      <h3>Pink Jasmine</h3>
+      <p>$30</p>
+    </div>
+    <div class=" rounded w-50 text-center m-5 cursor-pointer">
+      <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1 " src="./images/gc4.png" alt="">
+      <h3>Rose Products</h3>
+      <p>$50</p>
+    </div>
+  </div>
+</section>
+  <!-- footer -->
+  <section class="bg-green-100 mt-3 p-7">
+    <h1 class="font-bold text-3xl">Greenden</h1>
+    <p class="py-4 px-2">All Rights Reserved. Reproduction in whole or in part without permission is prohibited.</p>
+    <p class="font-semibold"> &copy; Chozhan_Greenden.in</p>
+  </section>
+
+  <script src="product.js"></script>
+</body>
+
+</html>

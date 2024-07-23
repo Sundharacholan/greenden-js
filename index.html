@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenden</title>
+  <!--tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- menu -->
+  <div class="bg-green-100  p-3 flex items-center justify-between shadow-2xl sticky top-0 z-20">
+    <h1 class="text-2xl">Greenden</h1>
+
+    <svg id="menubtn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="size-6 cursor-pointer md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class=" gap-5 hidden md:flex">
+      <li>
+        <a href="./index.html" class="text-gray-500 hover:underline hover:text-black">Home</a>
+      </li>
+      <li>
+        <a href="./products.html" class="text-gray-500 hover:underline hover:text-black">Products</a>
+      </li>
+      <li>
+        <a href="./contact.html" class="text-gray-500 hover:underline hover:text-black">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- navbar -->
+  <div class="bg-green-100 fixed z-10 shadow-xl transition-all duration-1000 " id="navbar" style="width: 250px; height: 100%; right: -70%;">
+    <div id="backbtn" class="cursor-pointer">
+      <p class="font-semibold px-52 py-2 m-2"> X </p>
+    </div>
+    <ul class=" gap-32 my-5 text-center text-xl md:flex ">
+      <li class="py-1">
+        <a href="./index.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Home</a>
+      </li>
+      <li class="py-1">
+        <a href="./products.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Products</a>
+      </li>
+      <li class="py-1">
+        <a href="./contact.html" class="text-gray-700 font-semibold hover:underline hover:text-black">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!-- herosec -->
+  <section class="bg-green-100 md:flex justify-center">
+    <div>
+      <p class="p-7 text-black">We offer you a wide range of Artificial and Natural Flowers</p>
+      <h2 class="text-3xl px-7 md:text-5xl"><b>Plants for your interior</b></h2>
+      <div class="mt-5 px-7">
+        <button class="border-2 border-black rounded bg-black text-white p-2">Shop Now</button>
+        <button class="border border-black rounded p-2">Watch video</button>
+      </div>
+      <p class="p-7 text-gray-500">160+ Plant Species | 100+ Clients</p>
+    </div>
+    <div class="hidden md:block">
+      <img class="w-56 h-44 mt-10 px-10" src="./images/header-img.jpg" alt="header-img">
+    </div>
+  </section>
+  <!-- about us -->
+  <section>
+    <h1 class="font-bold text-2xl text-center mt-5">About us</h1>
+    <p class="text-center">This site for those who admire the beauty and harmony of nature</p>
+    <div class="md:flex">
+      <div class="border border-black text-center p-3 m-5">
+        <svg class=" w-16 h-16 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          strokeWidth={1.5} stroke="currentColor" className="size-6">
+          <path strokeLinecap="round" strokeLinejoin="round"
+            d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+        </svg>
+        <h3 class="text-2xl font-semibold p-2">Large Assortment</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ipsum qui beatae doloremque
+          perspiciatis optio autem iste quo ducimus.</p>
+      </div>
+      <div class="border border-black text-center p-3 m-5">
+        <svg class=" w-16 h-16 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+        </svg>
+        <h3 class="text-2xl font-semibold p-2">Free and Fast Shippingt</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ipsum qui beatae doloremque
+          perspiciatis optio autem iste quo ducimus.</p>
+      </div>
+      <div class="border border-black text-center p-3 m-5">
+        <svg class=" w-16 h-16 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+        </svg>
+        <h3 class="text-2xl font-semibold p-2">24/7 Support</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione nam ipsum qui beatae doloremque
+          perspiciatis optio autem iste quo ducimus.</p>
+      </div>
+    </div>
+  </section>
+  <!-- best seller -->
+  <section class="text-center">
+    <h1 class="font-bold text-2xl text-center mt-5">Best Seller</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 items-center mt-1 gap-5">
+      <div class="rounded w-50 text-center m-5 cursor-pointer">
+        <img class="inline mt-3 rounded  hover:shadow-2xl transform hover:-translate-y-1 " src="./images/gc1.png"
+          alt="">
+        <h3>Self water plant</h3>
+        <p>$25</p>
+      </div>
+      <div class="  rounded w-50 text-center m-5 cursor-pointer">
+        <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/gc2.png"
+          alt="">
+        <h3>Artificial Flower Pot</h3>
+        <p>$71</p>
+      </div>
+      <div class=" rounded w-50 text-center  m-5 cursor-pointer">
+        <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1  " src="./images/gc3.png"
+          alt="">
+        <h3>Flower Pot for Balcony</h3>
+        <p>$30</p>
+      </div>
+      <div class=" rounded w-50 text-center m-5 cursor-pointer">
+        <img class="inline mt-3 rounded hover:shadow-2xl transform hover:-translate-y-1 " src="./images/gc4.png" alt="">
+        <h3>Rose Products</h3>
+        <p>$50</p>
+      </div>
+    </div>
+
+  </section>
+  <!-- Customer Reviews -->
+  <section>
+    <h1 class="font-bold text-2xl text-center mt-5">Customer Reviews</h1>
+    <div class=" bg-green-950 p-5 m-5">
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex deserunt officia saepe
+        dolorum porro amet molestias magnam vitae. Illum, ex sit? Voluptates accusamus magni quod quaerat commodi
+        provident, numquam odio illum ducimus dolorum quidem.</p>
+      <h3 class=" font-bold text-yellow-500"> Doraemon</h3>
+    </div>
+    <div class=" bg-green-950 p-5 m-5">
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex deserunt officia saepe
+        dolorum porro amet molestias magnam vitae. Illum, ex sit? Voluptates accusamus magni quod quaerat commodi
+        provident, numquam odio illum ducimus dolorum quidem.</p>
+      <h3 class=" font-bold text-yellow-500">Shinchan</h3>
+    </div>
+    <div class=" bg-green-950 p-5 m-5">
+      <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex deserunt officia saepe
+        dolorum porro amet molestias magnam vitae. Illum, ex sit? Voluptates accusamus magni quod quaerat commodi
+        provident, numquam odio illum ducimus dolorum quidem.</p>
+      <h3 class=" font-bold text-yellow-500">Jackie Chan </h3>
+    </div>
+  </section>
+  <!-- cta -->
+  <section class="text-center">
+    <h1 class="font-bold text-2xl mt-7">Join our News Letter</h1>
+    <p class="mx-5 -mx-5"><a class="underline" href="">Signup</a> for email newspaper to get exclusive discounts,
+      updates, and more</p>
+    <input type="text" class="border border-black m-3 p-2 " style="width: 80%;">
+    <br>
+    <button
+      class="border-2 border-black rounded bg-black text-white p-3 w-28 h-12 underline hover:bg-neutral-900 hover:border-neutral-900">Subscribe</button>
+  </section>
+  <!-- footer -->
+  <section class="bg-green-100 mt-3 p-7">
+    <h1 class="font-bold text-3xl">Greenden</h1>
+    <p class="py-4 px-2">All Rights Reserved. Reproduction in whole or in part without permission is prohibited.</p>
+    <p class="font-semibold"> &copy; Chozhan_Greenden.in</p>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
